@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TreeList msg="Tree list is empty."/>
+    <TreeCreateNew status="not-yet"></TreeCreateNew>
+    <SignIn status="not-yet"></SignIn>
+    <AboutInfo></AboutInfo>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import TreeList from '@/components/TreeList.vue'
+import TreeCreateNew from '@/components/TreeCreateNew.vue'
+import SignIn from '@/components/SignIn.vue'
+import AboutInfo from '@/components/AboutInfo.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    TreeList,
+    TreeCreateNew,
+    SignIn,
+    AboutInfo
   }
 }
 </script>
