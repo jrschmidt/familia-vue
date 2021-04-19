@@ -1,7 +1,7 @@
 <template>
   <div class="tree-list">
-    <h1>{{ msg }}</h1>
-    <p>This is the TreeList component.</p>
+    <p>This is the <strong>TreeList</strong> component.</p>
+    <p class="fm-msg">msg: <em>{{ msg }}</em></p>
   </div>
 </template>
 

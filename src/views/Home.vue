@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <TreeList msg="Tree list is empty."/>
-    <TreeCreateNew status="not-yet"></TreeCreateNew>
+    <TreeCreateButton status="inactive"></TreeCreateButton>
     <SignIn status="not-yet"></SignIn>
     <AboutInfo></AboutInfo>
   </div>
@@ -10,7 +10,7 @@
 <script>
 // @ is an alias to /src
 import TreeList from '@/components/TreeList.vue'
-import TreeCreateNew from '@/components/TreeCreateNew.vue'
+import TreeCreateButton from '@/components/TreeCreateButton.vue'
 import SignIn from '@/components/SignIn.vue'
 import AboutInfo from '@/components/AboutInfo.vue'
 
@@ -18,7 +18,7 @@ export default {
   name: 'Home',
   components: {
     TreeList,
-    TreeCreateNew,
+    TreeCreateButton,
     SignIn,
     AboutInfo
   }

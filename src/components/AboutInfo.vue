@@ -1,6 +1,6 @@
 <template>
   <div class="about-info">
-    <p>This is the AboutInfo component.</p>
+    <p>This is the <strong>AboutInfo</strong> component.</p>
   </div>
 </template>
 

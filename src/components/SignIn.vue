@@ -1,7 +1,6 @@
 <template>
   <div class="sign-in">
-    <h1>{{ msg }}</h1>
-    <p>This is the SignIn component.</p>
+    <p>This is the <strong>SignIn</strong> component.</p>
   </div>
 </template>
 
