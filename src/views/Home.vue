@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <TreeList msg="Tree list is empty."/>
+    <TreeList></TreeList>
     <TreeCreateButton status="inactive"></TreeCreateButton>
     <SignIn status="not-yet"></SignIn>
     <AboutInfo></AboutInfo>

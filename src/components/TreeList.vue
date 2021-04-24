@@ -1,15 +1,21 @@
 <template>
   <div class="tree-list">
     <p>This is the <strong>TreeList</strong> component.</p>
-    <p class="fm-msg">msg: <em>{{ msg }}</em></p>
+    <div>Vuex test message: {{ testMsg }}</div>
+    <div>TREES: </div>
   </div>
 </template>
 
 <script>
+import { useStore } from 'vuex'
+import { computed } from 'vue'
+
 export default {
   name: 'TreeList',
-  props: {
-    msg: String
+  setup () {
+    const store = useStore()
+    const testMsg = computed(() => store.state.testMsg)
+    return {testMsg}
   }
 }
 </script>
