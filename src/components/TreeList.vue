@@ -2,7 +2,14 @@
   <div class="tree-list">
     <p>This is the <strong>TreeList</strong> component.</p>
     <div>Vuex test message: {{ testMsg }}</div>
-    <div>TREES: </div>
+    <div>
+      <h5>TREES</h5>
+      <ul id="treelistnames">
+        <li v-for="tree in trees" :key="tree.id">
+          {{ tree.name }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -14,8 +21,12 @@ export default {
   name: 'TreeList',
   setup () {
     const store = useStore()
+    const trees = computed(() => store.state.trees)
     const testMsg = computed(() => store.state.testMsg)
-    return {testMsg}
+    return {
+      trees,
+      testMsg
+    }
   }
 }
 </script>
@@ -25,13 +36,13 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
+h5 {
+  margin: 3px;
+}
 ul {
   list-style-type: none;
   padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
+  margin: 0;
 }
 a {
   color: #42b983;
