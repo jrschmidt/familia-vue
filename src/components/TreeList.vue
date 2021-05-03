@@ -1,7 +1,6 @@
 <template>
   <div class="tree-list">
     <p>This is the <strong>TreeList</strong> component.</p>
-    <div>Vuex test message: {{ testMsg }}</div>
     <div>
       <h5>TREES</h5>
       <ul id="treelistnames">
@@ -22,10 +21,8 @@ export default {
   setup () {
     const store = useStore()
     const trees = computed(() => store.state.trees)
-    const testMsg = computed(() => store.state.testMsg)
     return {
-      trees,
-      testMsg
+      trees
     }
   }
 }
