@@ -1,11 +1,16 @@
 <template>
   <div class="tree-view">
-    <p>This is the <strong>TreeView</strong> component.</p>
+    <h5>Family Tree id: {{ treeId }}</h5>
   </div>
 </template>
 
 <script>
+import { reactive } from 'vue'
+
 export default {
-  name: 'TreeView'
+  name: 'TreeView',
+  props: {
+    treeId: String
+  },
 }
 </script>
