@@ -1,4 +1,4 @@
-import { getTreeTitle } from '../../src/store/getters.js'
+import { getters } from '../../src/store/getters.js'
 
 const state = {
 
@@ -20,5 +20,5 @@ const state = {
 }
 
 test('retrieves family tree title', () => {
-  expect(getTreeTitle(state, 'ft002')).toEqual('Lucas Family Tree')
+  expect(getters.getTreeTitle(state, 'ft002')).toEqual('Lucas Family Tree')
 })
