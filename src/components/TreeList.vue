@@ -4,7 +4,7 @@
     <div>
       <h5>TREES</h5>
       <ul id="treelistnames">
-        <li v-for="tree in trees" :key="tree.id">
+        <li v-for="tree in treeList" :key="tree.id">
           {{ tree.name }}
         </li>
       </ul>
@@ -20,9 +20,9 @@ export default {
   name: 'TreeList',
   setup () {
     const store = useStore()
-    const trees = computed(() => store.state.trees)
+    const treeList = computed(() => store.state.treeList)
     return {
-      trees
+      treeList
     }
   }
 }

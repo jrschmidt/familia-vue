@@ -4,7 +4,7 @@ import TreeList from '@/components/TreeList.vue'
 
 const store = createStore({
   state: {
-    trees: [
+    treeList: [
       {
         id: 'ft001',
         name: 'Schmidt Family Tree'

@@ -3,7 +3,7 @@ import getters from '.getters'
 
 export default createStore({
   state: {
-    trees: [
+    treeList: [
       {
         id: 'ft001',
         name: 'Schmidt Family Tree'
