@@ -1,8 +1,8 @@
 import { createStore } from 'vuex'
-import getters from './getters'
 
 export default createStore({
   state: {
+
     treeList: [
       {
         id: 'ft001',
@@ -18,5 +18,11 @@ export default createStore({
       },
     ]
   },
-  getters
+
+  getters: {
+
+    getTreeTitle: function (state, treeId) {
+      return state.trees.find( tree => tree.id === treeId).name
+    }
+  }
 })
