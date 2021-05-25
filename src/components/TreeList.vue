@@ -5,7 +5,9 @@
       <h5>TREES</h5>
       <ul id="treelistnames">
         <li v-for="tree in treeList" :key="tree.id">
-          {{ tree.name }}
+          <router-link :to="{ name: 'TreeView', params: {id: tree.id} }">
+            {{ tree.name }}
+          </router-link>
         </li>
       </ul>
     </div>

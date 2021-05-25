@@ -21,14 +21,21 @@ const store = createStore({
   }
 })
 
+const route = {
+  params: {
+    treeId: 'ft002'
+  }
+}
+
+
 describe('TreeView component', () => {
 
-  test('renders TreeView component', () => {
+  test.skip('renders TreeView component', () => {
     const wrapper = shallowMount(TreeView)
     expect(wrapper.html()).toContain('tree-view')
   })
 
-  test('points to the designated family tree', () => {
+  test.skip('references the designated family tree', () => {
     const wrapper = mount(TreeView, {
       props: {
           treeId: 'ft002'
@@ -38,14 +45,19 @@ describe('TreeView component', () => {
   })
 
   test.skip('displays title of the family tree', () => {
+    const treeId = 'ft002'
     const wrapper = mount(TreeView, {
       global: {
-        plugins: [store]
-      },
-      props: {
-          treeId: 'ft002'
-        }
-
+        props: {
+          treeId: treeId
+        },
+        plugins: [store, route],
+        // mocks: {
+        //   $route: {params: {
+        //     treeId: treeId
+        //   }}
+        // }
+      }
     })
     expect(wrapper.find('h3').text()).toContain('Lucas Family Tree')
   })

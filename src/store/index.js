@@ -17,12 +17,6 @@ export default createStore({
         name: 'Mills Family Tree'
       },
     ]
-  },
-
-  getters: {
-
-    getTreeTitle: function (state, treeId) {
-      return state.trees.find( tree => tree.id === treeId).name
-    }
   }
+
 })
