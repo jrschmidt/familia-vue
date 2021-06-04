@@ -6,15 +6,21 @@ export default createStore({
     treeList: [
       {
         id: 'ft001',
-        name: 'Schmidt Family Tree'
+        name: 'Schmidt Family Tree',
+        rootPerson: 'John Schmidt',
+        rootPersonId: 'p0001'
       },
       {
         id: 'ft002',
-        name: 'Lucas Family Tree'
+        name: 'Lucas Family Tree',
+        rootPerson: 'Margaret Lucas',
+        rootPersonId: 'p0002'
       },
       {
         id: 'ft003',
-        name: 'Mills Family Tree'
+        name: 'Mills Family Tree',
+        rootPerson: 'Marilyn Mills',
+        rootPersonId: 'p0003'
       },
     ],
 

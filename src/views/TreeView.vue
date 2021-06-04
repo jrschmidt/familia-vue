@@ -2,6 +2,7 @@
   <div class="tree-view">
     <h5>Family Tree id: {{ treeId }}</h5>
     <h3>{{ tree.name }}</h3>
+    <h4>Root person: {{ tree.rootPerson }}</h4>
   </div>
 </template>
 
