@@ -8,7 +8,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import TreeList from '@/components/TreeList.vue'
 import TreeCreateButton from '@/components/TreeCreateButton.vue'
 import SignIn from '@/components/SignIn.vue'
