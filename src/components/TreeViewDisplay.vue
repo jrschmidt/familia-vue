@@ -1,6 +1,6 @@
 <template>
-  <div class="tree-view-display">
-    <p>This is the <strong>TreeViewDisplay</strong> component.</p>
+  <div class="tree-view-display primary">
+    <p class="comp-label">This is the <strong>TreeViewDisplay</strong> component.</p>
   </div>
 </template>
 

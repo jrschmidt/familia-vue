@@ -1,6 +1,6 @@
 <template>
-  <div class="tree-list">
-    <p>This is the <strong>TreeList</strong> component.</p>
+  <div class="tree-list primary">
+    <p class="comp-label">This is the <strong>TreeList</strong> component.</p>
     <div>
       <h5>TREES</h5>
       <ul id="treelistnames">
@@ -9,6 +9,7 @@
             {{ tree.name }}
           </router-link>
         </li>
+
       </ul>
     </div>
   </div>
@@ -40,6 +41,6 @@ ul {
   margin: 0;
 }
 a {
-  color: #42b983;
+  color: #aa6666;
 }
 </style>

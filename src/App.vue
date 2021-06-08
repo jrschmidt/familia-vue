@@ -11,16 +11,16 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.primary {
+  margin: 5px;
+  background-color: #cccccc;
+  border-radius: 30px;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.comp-label {
+  color: #6666cc;
+  font-size: 0.7rem;
+  font-style: italic;
+  text-decoration: underline;
 }
 </style>

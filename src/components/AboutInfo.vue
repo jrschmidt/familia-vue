@@ -1,6 +1,6 @@
 <template>
-  <div class="about-info">
-    <p>This is the <strong>AboutInfo</strong> component.</p>
+  <div class="about-info primary">
+    <p class="comp-label">This is the <strong>AboutInfo</strong> component.</p>
   </div>
 </template>
 

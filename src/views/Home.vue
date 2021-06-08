@@ -23,3 +23,30 @@ export default {
   }
 }
 </script>
+
+<style media="screen">
+  .home {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+      "left1 content"
+      "left2 content"
+      "left3 content";
+  }
+
+  .sign-in {
+    grid-area: left1;
+  }
+
+.tree-list {
+  grid-area: left2;
+}
+
+.tree-create-button {
+  grid-area: left3;
+}
+
+.about-info {
+  grid-area: content;
+}
+</style>

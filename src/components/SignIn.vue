@@ -1,6 +1,6 @@
 <template>
-  <div class="sign-in">
-    <p>This is the <strong>SignIn</strong> component.</p>
+  <div class="sign-in primary">
+    <p class="comp-label">This is the <strong>SignIn</strong> component.</p>
   </div>
 </template>
 
