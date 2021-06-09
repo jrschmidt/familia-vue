@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <TreeList></TreeList>
-    <TreeCreateButton status="inactive"></TreeCreateButton>
+    <TreeCreate status="inactive"></TreeCreate>
     <SignIn status="not-yet"></SignIn>
     <AboutInfo></AboutInfo>
   </div>
@@ -9,7 +9,7 @@
 
 <script>
 import TreeList from '@/components/TreeList.vue'
-import TreeCreateButton from '@/components/TreeCreateButton.vue'
+import TreeCreate from '@/components/TreeCreate.vue'
 import SignIn from '@/components/SignIn.vue'
 import AboutInfo from '@/components/AboutInfo.vue'
 
@@ -17,7 +17,7 @@ export default {
   name: 'Home',
   components: {
     TreeList,
-    TreeCreateButton,
+    TreeCreate,
     SignIn,
     AboutInfo
   }
@@ -42,7 +42,7 @@ export default {
   grid-area: left2;
 }
 
-.tree-create-button {
+.tree-create {
   grid-area: left3;
 }
 
