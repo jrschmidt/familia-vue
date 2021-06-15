@@ -13,8 +13,17 @@
 
 .primary {
   margin: 5px;
+  padding: 14px;
   background-color: #ccccdd;
   border-radius: 30px;
+}
+
+.primary-form {
+  margin: 5px;
+  background-color: #ccddcc;
+  border-radius: 10px;
+  border-color: #000000;
+  border-style: double;
 }
 
 .comp-label {

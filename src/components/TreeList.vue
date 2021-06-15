@@ -2,7 +2,7 @@
   <div class="tree-list primary">
     <p class="comp-label">This is the <strong>TreeList</strong> component.</p>
     <div>
-      <h5>TREES</h5>
+      <h5>FAMILY TREES</h5>
       <ul id="treelistnames">
         <li v-for="tree in treeList" :key="tree.id">
           <router-link :to="{ name: 'TreeView', params: {id: tree.id} }">
