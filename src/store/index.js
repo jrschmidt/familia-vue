@@ -42,8 +42,28 @@ export default createStore({
         lastname: 'Mills',
         firstname: 'Marilyn'
       }
-    ]
+    ],
 
-  }
+    idGeneratorData: {
+      treeList: {
+        prefixString: 'ft',
+        numberOfNumericDigits: 3,
+        lastSerialNumber: 3
+      },
+
+      persons: {
+        prefixString: 'p',
+        numberOfNumericDigits: 4,
+        lastSerialNumber: 3
+      }
+    }
+
+  },
+  mutations: {
+    incrementIdNumbers (state, idType) {
+      state.idGeneratorData[idType].lastSerialNumber ++
+    }
+  },
+  actions: {}
 
 })
