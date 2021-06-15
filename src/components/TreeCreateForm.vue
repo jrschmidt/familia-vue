@@ -1,6 +1,8 @@
 <template>
-  <div class="tree-create-form primary">
+  <div class="primary-form">
     <p class="comp-label">This is the <strong>TreeCreateForm</strong> component.</p>
+    <p>Enter name of the new family tree ...</p>
+    <p>Enter the name of the person who will be the "root person" of this family tree ...</p>
   </div>
 </template>
 
@@ -11,7 +13,9 @@ export default {
 </script>
 
 <style>
-  .tree-create-form {
-    background-color: #eecccc;
+  .primary-form {
+    margin: 5px;
+    background-color: #ccddcc;
+    border-radius: 30px;
   }
 </style>

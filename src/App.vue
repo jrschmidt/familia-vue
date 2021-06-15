@@ -13,7 +13,7 @@
 
 .primary {
   margin: 5px;
-  background-color: #cccccc;
+  background-color: #ccccdd;
   border-radius: 30px;
 }
 
