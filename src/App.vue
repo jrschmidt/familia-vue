@@ -22,7 +22,7 @@
   margin: 5px;
   background-color: #ccddcc;
   border-radius: 10px;
-  border-color: #000000;
+  border-color: #993333;
   border-style: double;
 }
 
@@ -31,5 +31,20 @@
   font-size: 0.7rem;
   font-style: italic;
   text-decoration: underline;
+}
+
+input {
+  margin-left: 14px;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  width: 200px;
+  font-size: 0.8rem;
+}
+
+.input-text {
+  margin: 30px 0 20px 0;
 }
 </style>
