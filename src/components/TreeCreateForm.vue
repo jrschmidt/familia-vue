@@ -5,25 +5,29 @@
       <h4>Create a New Family Tree</h4>
       <div class="input-text">
         <label for="tree-label">Label or title for new Family Tree</label>
-        <input type="text" id="tree-label" v-model="value.treeLabel">
+        <input type="text" id="tree-label" v-model.lazy="treeLabel">
       </div>
       <div class="input-text">
         <label for="root-person-name">Name of the person who will be "root person" of this Family Tree</label>
-        <input type="text" id="root-person-name" v-model="value.rootPersonName">
+        <input type="text" id="root-person-name" v-model.lazy="rootPersonName">
       </div>
     </form>
+    <div>
+      Creating a new family tree. Title is {{ treeLabel }}. The root person is {{ rootPersonName }}.
+    </div>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue'
 export default {
   name: 'TreeCreateForm',
-  data () {
+  setup () {
+    const treeLabel = ref('')
+    const rootPersonName = ref('')
     return {
-      value: {
-        treeLabel: '',
-        rootPersonName: ''
-      }
+      treeLabel,
+      rootPersonName
     }
   }
 }
