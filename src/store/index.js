@@ -59,11 +59,16 @@ export default createStore({
     }
 
   },
+
   mutations: {
     incrementIdNumbers (state, idType) {
       state.idGeneratorData[idType].lastSerialNumber ++
+    },
+    addTree (state, tree) {
+      state.treeList.push(tree)
     }
   },
+
   actions: {}
 
 })

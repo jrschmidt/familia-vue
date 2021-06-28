@@ -37,6 +37,10 @@ input {
   margin-left: 14px;
 }
 
+.input-text {
+  margin: 30px 0 20px 0;
+}
+
 label {
   display: inline-block;
   text-align: right;
@@ -44,7 +48,10 @@ label {
   font-size: 0.8rem;
 }
 
-.input-text {
-  margin: 30px 0 20px 0;
+button {
+  margin: 14px;
+  color: #aa66aa;
+  font-style: italic;
+  font-weight: bold;
 }
 </style>
